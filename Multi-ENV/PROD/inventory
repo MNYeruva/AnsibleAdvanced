@@ -1,2 +1,6 @@
 [mongodb]
 ip address
+
+[mongodb:vars]
+NAME=PROD-Server
+# $ansible-playbook -i PROD/inventory -e ansible_user=centos -e ansible_password=DevOps321 mongodb.yaml

@@ -1,0 +1,7 @@
+- name: install robosho project
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: print the vars according to environments 
+    ansible.builtin.debug:
+    message: "Hello, we are group of: {{NAME}}"
