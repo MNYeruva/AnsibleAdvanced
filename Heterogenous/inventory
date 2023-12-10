@@ -1,2 +1,5 @@
 [centos]
 ip ansible_user=centos
+
+[ubuntu]
+ip ansible_user=ubuntu

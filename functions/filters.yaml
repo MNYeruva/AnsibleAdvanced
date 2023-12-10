@@ -1,0 +1,18 @@
+- name: filters
+  hosts: localhost
+  vars:
+    NAME: mnyeruva
+  tasks:
+  - name: convert into upper case
+    debug:
+      message: "Hello {{ NAME | upper }}"
+
+  - name: convert into lower case
+    debug:
+      message: "Hello {{ NAME | lower }}"    
+
+  - name: undefined variable
+    debug:
+      message: "Hello, Course is: {{ COURSE | default('DevOps') }}"       
+ 
+    
