@@ -1,0 +1,7 @@
+- name: understand facts
+  hosts: centos
+  tasks:
+  - name: print all the facts
+    ansible'builtin.debug:
+      message: "All facts: {{ansible_facts}}"
+   
